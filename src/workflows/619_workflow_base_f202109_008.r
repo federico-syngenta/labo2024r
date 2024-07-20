@@ -445,8 +445,11 @@ wf_septiembre <- function(pnombrewf, ratio, desvio) {
 }
 
 # Valores a asignar
-ratios <- c(0.05, 0.666, 1.2, 0.25, 0.95)
-desvios <- c(0.5,-0.5,0.05, 0.25, 0.5)
+ratios <- c(0.0,0.0,2.0,2.0)
+desvios <- c(4.0,-4.0,4.0,-4.0)
+
+# ratio varia de 0.0 a 2.0
+# desvio varia de -4.0 a 4.0
 
 # Iterar sobre los valores y llamar a la función wf_septiembre con los nuevos valores
 for (i in 1:length(ratios)) {
